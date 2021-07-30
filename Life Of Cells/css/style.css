@@ -1,0 +1,150 @@
+*{
+    background-color: rgb(255, 255, 255) !important;
+    scroll-behavior: smooth;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.topic {
+    
+    font-family: 'Righteous', cursive;
+    color: #2da7bd;
+    margin-top: 10PX;
+    font-size: 75px !important;
+    text-align: center;
+    animation: flipInX 2s ease-in-out 1;
+}
+@keyframes flipInX {
+    0% {
+      -webkit-transform: perspective(400px) rotateX(90deg);
+      -ms-transform: perspective(400px) rotateX(90deg);
+      transform: perspective(400px) rotateX(90deg);
+      opacity: 0;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) rotateX(-10deg);
+      -ms-transform: perspective(400px) rotateX(-10deg);
+      transform: perspective(400px) rotateX(-10deg);
+    }
+  
+    70% {
+      -webkit-transform: perspective(400px) rotateX(10deg);
+      -ms-transform: perspective(400px) rotateX(10deg);
+      transform: perspective(400px) rotateX(10deg);
+    }
+  
+    100% {
+      -webkit-transform: perspective(400px) rotateX(0deg);
+      -ms-transform: perspective(400px) rotateX(0deg);
+      transform: perspective(400px) rotateX(0deg);
+      opacity: 1;
+    }
+  }
+#space{
+    margin-top: 100vh;
+    margin-bottom: 45px;
+}
+
+.buttons {
+
+    text-align: center;
+    
+}
+
+.btn {
+    font-size: 20px;
+    color: #000000;
+    text-transform: capitalize;
+    
+    letter-spacing: 5px;
+    padding: 10px 50px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #ffffff !important;     
+    
+}
+.btn:hover {
+    font-size: 20px;
+    color: rgb(53, 53, 53);
+    text-transform: capitalize;
+    
+    letter-spacing: 5px;
+    padding: 10px 50px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #dadada !important;   
+    border: transparent;  
+    
+}
+
+.space {
+    text-align: center;
+}
+
+canvas {
+    display:flex;
+    margin: auto ;
+    border: 10px solid #ffffff ; 
+    box-shadow: 15px 15px 25px rgb(0, 0, 0);
+    
+}
+
+
+
+  .canva{
+      display:flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 45px;
+    margin-top: 35px;
+  }
+  
+.get-btn a{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 75px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    text-decoration: none;
+    font-size: 50px;
+    color: black;
+    animation: flash 4s ease 1;
+}
+@keyframes flash {
+    0%, 50%, 100% {
+      opacity: 1;
+    }
+  
+    25%, 75% {
+      opacity: 0;
+    }
+  }
+  
+  .flash {
+    -webkit-animation-name: flash;
+    animation-name: flash;
+  }
+  
+.get-btn {
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 45px;
+
+    text-decoration: none;
+    font-size: 50px;
+    color: black;
+   
+}
+
+.get-btn a:hover {
+    display: flex;
+    justify-content: center;
+      text-decoration: none;
+    font-size: 50px;
+    color: rgb(44, 209, 221);
+   
+}
+
+
+

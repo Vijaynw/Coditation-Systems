@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="./css/style.css">
+ 
+    <title>game of life</title>
+
+  </head>
+  <body>
+      <div class="container-fluid topic">
+         Life of Cells
+          
+      </div>
+ 
+      
+      <div class="canva">
+        <h2>
+          Rules of Life Of Cells
+          <!-- At each step in time (tick), the following transitions occur: -->
+        </h2>
+        <p>
+          1. Any live cell with fewer than two live neighbors dies, as if by loneliness. 
+        </p>
+          
+          <p>
+            2. Any live cell with more than three live neighbors dies, as if by overcrowding.
+          </p>
+          <p>
+            
+            3. Any live cell with two or three live neighbors lives, unchanged, to the next generation.
+          </p>
+          <p>
+
+          4. Any dead cell with exactly three live neighbors comes to life.
+        </p>
+      </div>
+      <div class="get-btn">
+        <a href="#space">
+
+          Click To Get a Board
+        </a>
+      </div>
+      <div id="space">
+        <div class="container-fluid buttons ">
+          <button class="btn btn-primary start" >Add Next Cells (start)</button>
+          <button class="btn btn-primary stop">stop</button>
+          <button class="btn btn-primary randomize">randomize</button>
+              
+      </div>
+        <canvas class="life  "></canvas>
+      </div>
+     
+    <script src="./js/main.js"></script> 
+ </body>
+</html>
